@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_THOUGHTS } from "../utils/queries";
-import ThoughtList from "../components/thoughtList/index";
+import ThoughtList from "../components/ThoughtList/index";
 const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
   const thoughts = data?.thoughts || [];
